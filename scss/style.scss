@@ -228,15 +228,47 @@ a {
   .nav {
     .menu-btn {
       @media (max-width: 940px) {
-        display: block;
+        display: inline-block;
         width: 50px;
         height: 50px;
-        background: rgb(128, 115, 0);
+        cursor: pointer;
+        background: transparent;
+        order: 1;
+        position: relative;
+
+        .btn-line {
+          @media (max-width: 940px) {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            height: 2px;
+
+            &:nth-child(1) {
+              top: 0;
+            }
+            &:nth-child(2) {
+              top: 20px;
+            }
+            &:nth-child(3) {
+              top: 20px;
+            }
+            &:nth-child(4) {
+              top: 40px;
+            }
+          }
+        }
       }
     }
-    .menu{
+
+    .menu {
       @media (max-width: 940px) {
-       display: none;
+        display: none;
+      }
+    }
+    .phone {
+      @media (max-width: 940px) {
+        text-align: center;
       }
     }
   }
