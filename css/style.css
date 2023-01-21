@@ -33,6 +33,18 @@ a {
   font-size: 24px;
   line-height: 29px;
 }
+.header .menu-open .btn-line:nth-child(1) {
+  transform: scaleX(0);
+}
+.header .menu-open .btn-line:nth-child(2) {
+  transform: rotate(45deg);
+}
+.header .menu-open .btn-line:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.header .menu-open .btn-line:nth-child(4) {
+  transform: scaleX(0);
+}
 .header .nav {
   display: flex;
   justify-content: space-between;
@@ -218,6 +230,7 @@ a {
     width: 100%;
     background: #fff;
     height: 2px;
+    transition: 0.3s;
   }
   .header .nav .menu-btn .btn-line:nth-child(1) {
     top: 0;

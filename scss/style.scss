@@ -33,10 +33,28 @@ a {
   font-size: 24px;
   line-height: 29px;
 
+  .menu-open {
+    .btn-line {
+      &:nth-child(1) {
+        transform: scaleX(0);
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+      &:nth-child(4) {
+        transform: scaleX(0);
+      }
+    }
+  }
+
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .menu-btn {
       display: none;
     }
@@ -243,7 +261,7 @@ a {
             width: 100%;
             background: #fff;
             height: 2px;
-
+            transition: 0.3s;
             &:nth-child(1) {
               top: 0;
             }
@@ -426,4 +444,6 @@ a {
       }
     }
   }
+}
+.header {
 }
